@@ -232,8 +232,8 @@ static void ekf_initialize(ekf_t * ekf, const _float_t pdiag[EKF_N])
 
             ekf->P[i*EKF_N+j] = i==j ? pdiag[i] : 0;
         }
-
-        ekf->x[i] = 0;
+        //ép khởi tạo bằng 0
+        //ekf->x[i] = 0;
     }
 }
 
